@@ -10,6 +10,8 @@
 		24B0387089DC010362FE9E4F /* Pods_RxSwiftExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F80877A9364951749009C4 /* Pods_RxSwiftExamples.framework */; };
 		A697D77427BA6B770000C494 /* SimplePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A697D77327BA6B770000C494 /* SimplePickerViewController.xib */; };
 		A697D77627BA6BC90000C494 /* CustomeAdapterPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A697D77527BA6BC90000C494 /* CustomeAdapterPickerViewController.xib */; };
+		A697D77A27BB804D0000C494 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697D77827BB804D0000C494 /* SimpleValidationViewController.swift */; };
+		A697D77B27BB804D0000C494 /* SimpleValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A697D77927BB804D0000C494 /* SimpleValidationViewController.xib */; };
 		A6A9979627B65F9200D01616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9979527B65F9200D01616 /* AppDelegate.swift */; };
 		A6A9979A27B65F9200D01616 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9979927B65F9200D01616 /* RootViewController.swift */; };
 		A6A9979F27B65F9300D01616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A9979E27B65F9300D01616 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		2CC96FA0AE98483A771F6B3D /* Pods-RxSwiftExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExamples.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftExamples/Pods-RxSwiftExamples.release.xcconfig"; sourceTree = "<group>"; };
 		A697D77327BA6B770000C494 /* SimplePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimplePickerViewController.xib; sourceTree = "<group>"; };
 		A697D77527BA6BC90000C494 /* CustomeAdapterPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomeAdapterPickerViewController.xib; sourceTree = "<group>"; };
+		A697D77827BB804D0000C494 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
+		A697D77927BB804D0000C494 /* SimpleValidationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleValidationViewController.xib; sourceTree = "<group>"; };
 		A6A9979227B65F9200D01616 /* RxSwiftExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A9979527B65F9200D01616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6A9979927B65F9200D01616 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A697D77727BB80220000C494 /* SimpleValidation */ = {
+			isa = PBXGroup;
+			children = (
+				A697D77827BB804D0000C494 /* SimpleValidationViewController.swift */,
+				A697D77927BB804D0000C494 /* SimpleValidationViewController.xib */,
+			);
+			path = SimpleValidation;
+			sourceTree = "<group>";
+		};
 		A6A9978727B65F5A00D01616 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +97,7 @@
 		A6A9979427B65F9200D01616 /* RxSwiftExamples */ = {
 			isa = PBXGroup;
 			children = (
+				A697D77727BB80220000C494 /* SimpleValidation */,
 				A6A997AE27B678AA00D01616 /* UIPickerViewExample */,
 				A6A997A927B66E1300D01616 /* Numbers */,
 				A6A9979527B65F9200D01616 /* AppDelegate.swift */,
@@ -188,6 +202,7 @@
 				A6A997A227B65F9300D01616 /* LaunchScreen.storyboard in Resources */,
 				A6A997AD27B66E9800D01616 /* NumbersViewController.xib in Resources */,
 				A697D77427BA6B770000C494 /* SimplePickerViewController.xib in Resources */,
+				A697D77B27BB804D0000C494 /* SimpleValidationViewController.xib in Resources */,
 				A6A9979F27B65F9300D01616 /* Assets.xcassets in Resources */,
 				A697D77627BA6BC90000C494 /* CustomeAdapterPickerViewController.xib in Resources */,
 			);
@@ -245,6 +260,7 @@
 				A6E6E3B427BA2920001C72A1 /* PickerViewTabBarController.swift in Sources */,
 				A6A997B627B9F87900D01616 /* ViewController.swift in Sources */,
 				A6A997AC27B66E9800D01616 /* NumbersViewController.swift in Sources */,
+				A697D77A27BB804D0000C494 /* SimpleValidationViewController.swift in Sources */,
 				A6A9979A27B65F9200D01616 /* RootViewController.swift in Sources */,
 				A6A997BA27BA078600D01616 /* CustomeAdapterPickerViewController.swift in Sources */,
 				A6A9979627B65F9200D01616 /* AppDelegate.swift in Sources */,
