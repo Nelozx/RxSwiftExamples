@@ -12,6 +12,11 @@
 		A697D77627BA6BC90000C494 /* CustomeAdapterPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A697D77527BA6BC90000C494 /* CustomeAdapterPickerViewController.xib */; };
 		A697D77A27BB804D0000C494 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697D77827BB804D0000C494 /* SimpleValidationViewController.swift */; };
 		A697D77B27BB804D0000C494 /* SimpleValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A697D77927BB804D0000C494 /* SimpleValidationViewController.xib */; };
+		A697D77F27BB8D5F0000C494 /* GeolocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697D77D27BB8D5F0000C494 /* GeolocationViewController.swift */; };
+		A697D78027BB8D5F0000C494 /* GeolocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A697D77E27BB8D5F0000C494 /* GeolocationViewController.xib */; };
+		A697D78427BB917E0000C494 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697D78327BB917E0000C494 /* GeolocationService.swift */; };
+		A697D78727BB943B0000C494 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697D78627BB943B0000C494 /* CLLocationManager+Rx.swift */; };
+		A697D78927BB94850000C494 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697D78827BB94850000C494 /* RxCLLocationManagerDelegateProxy.swift */; };
 		A6A9979627B65F9200D01616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9979527B65F9200D01616 /* AppDelegate.swift */; };
 		A6A9979A27B65F9200D01616 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9979927B65F9200D01616 /* RootViewController.swift */; };
 		A6A9979F27B65F9300D01616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A9979E27B65F9300D01616 /* Assets.xcassets */; };
@@ -31,6 +36,11 @@
 		A697D77527BA6BC90000C494 /* CustomeAdapterPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomeAdapterPickerViewController.xib; sourceTree = "<group>"; };
 		A697D77827BB804D0000C494 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
 		A697D77927BB804D0000C494 /* SimpleValidationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleValidationViewController.xib; sourceTree = "<group>"; };
+		A697D77D27BB8D5F0000C494 /* GeolocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationViewController.swift; sourceTree = "<group>"; };
+		A697D77E27BB8D5F0000C494 /* GeolocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeolocationViewController.xib; sourceTree = "<group>"; };
+		A697D78327BB917E0000C494 /* GeolocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
+		A697D78627BB943B0000C494 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		A697D78827BB94850000C494 /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		A6A9979227B65F9200D01616 /* RxSwiftExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A9979527B65F9200D01616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6A9979927B65F9200D01616 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +86,43 @@
 			path = SimpleValidation;
 			sourceTree = "<group>";
 		};
+		A697D77C27BB8D470000C494 /* GeolocationExample */ = {
+			isa = PBXGroup;
+			children = (
+				A697D77D27BB8D5F0000C494 /* GeolocationViewController.swift */,
+				A697D77E27BB8D5F0000C494 /* GeolocationViewController.xib */,
+			);
+			path = GeolocationExample;
+			sourceTree = "<group>";
+		};
+		A697D78127BB913D0000C494 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				A697D77C27BB8D470000C494 /* GeolocationExample */,
+				A697D77727BB80220000C494 /* SimpleValidation */,
+				A6A997AE27B678AA00D01616 /* UIPickerViewExample */,
+				A6A997A927B66E1300D01616 /* Numbers */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		A697D78227BB91490000C494 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A697D78327BB917E0000C494 /* GeolocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A697D78527BB94130000C494 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A697D78627BB943B0000C494 /* CLLocationManager+Rx.swift */,
+				A697D78827BB94850000C494 /* RxCLLocationManagerDelegateProxy.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A6A9978727B65F5A00D01616 = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +144,9 @@
 		A6A9979427B65F9200D01616 /* RxSwiftExamples */ = {
 			isa = PBXGroup;
 			children = (
-				A697D77727BB80220000C494 /* SimpleValidation */,
-				A6A997AE27B678AA00D01616 /* UIPickerViewExample */,
-				A6A997A927B66E1300D01616 /* Numbers */,
+				A697D78527BB94130000C494 /* Extensions */,
+				A697D78227BB91490000C494 /* Services */,
+				A697D78127BB913D0000C494 /* Examples */,
 				A6A9979527B65F9200D01616 /* AppDelegate.swift */,
 				A6A9979927B65F9200D01616 /* RootViewController.swift */,
 				A6A997B527B9F87900D01616 /* ViewController.swift */,
@@ -205,6 +252,7 @@
 				A697D77B27BB804D0000C494 /* SimpleValidationViewController.xib in Resources */,
 				A6A9979F27B65F9300D01616 /* Assets.xcassets in Resources */,
 				A697D77627BA6BC90000C494 /* CustomeAdapterPickerViewController.xib in Resources */,
+				A697D78027BB8D5F0000C494 /* GeolocationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,11 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A697D78427BB917E0000C494 /* GeolocationService.swift in Sources */,
+				A697D78727BB943B0000C494 /* CLLocationManager+Rx.swift in Sources */,
 				A6E6E3B427BA2920001C72A1 /* PickerViewTabBarController.swift in Sources */,
 				A6A997B627B9F87900D01616 /* ViewController.swift in Sources */,
 				A6A997AC27B66E9800D01616 /* NumbersViewController.swift in Sources */,
 				A697D77A27BB804D0000C494 /* SimpleValidationViewController.swift in Sources */,
 				A6A9979A27B65F9200D01616 /* RootViewController.swift in Sources */,
+				A697D78927BB94850000C494 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				A697D77F27BB8D5F0000C494 /* GeolocationViewController.swift in Sources */,
 				A6A997BA27BA078600D01616 /* CustomeAdapterPickerViewController.swift in Sources */,
 				A6A9979627B65F9200D01616 /* AppDelegate.swift in Sources */,
 				A6A997B327B6794300D01616 /* SimplePickerViewController.swift in Sources */,
@@ -355,6 +407,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RxSwiftExamples/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -432,6 +487,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RxSwiftExamples/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
