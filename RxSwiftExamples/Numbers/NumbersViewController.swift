@@ -24,7 +24,7 @@ class NumbersViewController: ViewController {
         Observable.combineLatest(TF1.rx.text.orEmpty, TF2.rx.text.orEmpty, TF3.rx.text.orEmpty) {
             (Int($0) ?? 0) + (Int($1) ?? 0) + (Int($2) ?? 0)
         }
-//        .map { $0.description }
+        .map { $0.description }
         .bind(to: result.rx.text)
         .disposed(by: disposeBag)
     }

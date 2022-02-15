@@ -32,7 +32,7 @@ class RootViewController: UITableViewController {
             Row(title: "API wrappers", desc: "API wrappers Example"),
             Row(title: "Calculator", desc: "Stateless calculator example"),
             Row(title: "ImagePicker", desc: "UIImagePickerController example"),
-            Row(title: "UIPickerView", desc: "UIPickerView example")
+            Row(title: "UIPickerView", desc: "UIPickerView example", target: PickerViewTabBarController.self)
         ]),
         Section(header: "Table/Collection view examples", rows: [
             Row(title: "Simplest table view example", desc: "Basic"),
@@ -48,7 +48,7 @@ class RootViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .groupTableViewBackground
+        view.backgroundColor = .systemGray4
         title = "Rx Examples"
     }
     
