@@ -26,8 +26,7 @@ class GeolocationViewController: ViewController {
     @IBOutlet weak var noGeoloactionView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.addSubview(noGeoloactionView)
+
         let geolocationService = GeolocationService.instance
         
         geolocationService.authorized

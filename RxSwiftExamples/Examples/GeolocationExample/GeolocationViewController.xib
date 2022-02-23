@@ -81,6 +81,52 @@
                         <constraint firstItem="MTG-u0-TFN" firstAttribute="top" secondItem="FTV-Zl-e5r" secondAttribute="bottom" constant="15" id="nKm-J1-GxT"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" id="loP-y3-fR2">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geolocation is not enabled for this app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh3-jT-fDj">
+                            <rect key="frame" x="67" y="317.5" width="280" height="61"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="280" id="2du-7e-fdf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <color key="textColor" red="0.94901960780000005" green="0.32549019610000002" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable it in the app preferences" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPg-uV-85M">
+                            <rect key="frame" x="67" y="386.5" width="280" height="17"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUr-Qd-0eF">
+                            <rect key="frame" x="107" y="433.5" width="200" height="28"/>
+                            <color key="backgroundColor" red="0.17483745810000001" green="0.60840499159999994" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="PIg-QU-uEU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                            <state key="normal" title="OPEN APP PREFERENCES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="zpL-yX-iUx"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="jPg-uV-85M" firstAttribute="top" secondItem="wh3-jT-fDj" secondAttribute="bottom" constant="8" id="7Zm-9x-3Ur"/>
+                        <constraint firstItem="SUr-Qd-0eF" firstAttribute="centerX" secondItem="loP-y3-fR2" secondAttribute="centerX" id="G0Z-Be-VtP"/>
+                        <constraint firstItem="jPg-uV-85M" firstAttribute="centerX" secondItem="loP-y3-fR2" secondAttribute="centerX" id="Uj7-sA-4lH"/>
+                        <constraint firstItem="jPg-uV-85M" firstAttribute="width" secondItem="wh3-jT-fDj" secondAttribute="width" id="fUA-MZ-xUx"/>
+                        <constraint firstItem="SUr-Qd-0eF" firstAttribute="top" secondItem="jPg-uV-85M" secondAttribute="bottom" constant="30" id="mat-Xm-Nhx"/>
+                        <constraint firstItem="wh3-jT-fDj" firstAttribute="centerX" secondItem="loP-y3-fR2" secondAttribute="centerX" id="nP3-Un-roN"/>
+                        <constraint firstItem="wh3-jT-fDj" firstAttribute="centerY" secondItem="loP-y3-fR2" secondAttribute="centerY" constant="-100" id="rT2-hj-HNx"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Xbd-hc-bi4"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -90,53 +136,6 @@
                 <constraint firstItem="wxL-PI-LqF" firstAttribute="top" secondItem="Xbd-hc-bi4" secondAttribute="top" constant="-44" id="zhR-YB-MaZ"/>
             </constraints>
             <point key="canvasLocation" x="132" y="-464"/>
-        </view>
-        <view contentMode="scaleToFill" id="loP-y3-fR2">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geolocation is not enabled for this app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh3-jT-fDj">
-                    <rect key="frame" x="67" y="317.5" width="280" height="61"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="280" id="2du-7e-fdf"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                    <color key="textColor" red="0.94901960780000005" green="0.32549019610000002" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable it in the app preferences" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPg-uV-85M">
-                    <rect key="frame" x="67" y="386.5" width="280" height="17"/>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUr-Qd-0eF">
-                    <rect key="frame" x="107" y="433.5" width="200" height="28"/>
-                    <color key="backgroundColor" red="0.17483745810000001" green="0.60840499159999994" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="200" id="PIg-QU-uEU"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
-                    <state key="normal" title="OPEN APP PREFERENCES"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="3"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-            </subviews>
-            <viewLayoutGuide key="safeArea" id="zpL-yX-iUx"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="jPg-uV-85M" firstAttribute="top" secondItem="wh3-jT-fDj" secondAttribute="bottom" constant="8" id="7Zm-9x-3Ur"/>
-                <constraint firstItem="SUr-Qd-0eF" firstAttribute="centerX" secondItem="loP-y3-fR2" secondAttribute="centerX" id="G0Z-Be-VtP"/>
-                <constraint firstItem="jPg-uV-85M" firstAttribute="centerX" secondItem="loP-y3-fR2" secondAttribute="centerX" id="Uj7-sA-4lH"/>
-                <constraint firstItem="jPg-uV-85M" firstAttribute="width" secondItem="wh3-jT-fDj" secondAttribute="width" id="fUA-MZ-xUx"/>
-                <constraint firstItem="SUr-Qd-0eF" firstAttribute="top" secondItem="jPg-uV-85M" secondAttribute="bottom" constant="30" id="mat-Xm-Nhx"/>
-                <constraint firstItem="wh3-jT-fDj" firstAttribute="centerX" secondItem="loP-y3-fR2" secondAttribute="centerX" id="nP3-Un-roN"/>
-                <constraint firstItem="wh3-jT-fDj" firstAttribute="centerY" secondItem="loP-y3-fR2" secondAttribute="centerY" constant="-100" id="rT2-hj-HNx"/>
-            </constraints>
-            <point key="canvasLocation" x="132" y="279"/>
         </view>
     </objects>
     <resources>

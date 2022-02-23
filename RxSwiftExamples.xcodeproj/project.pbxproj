@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		24B0387089DC010362FE9E4F /* Pods_RxSwiftExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F80877A9364951749009C4 /* Pods_RxSwiftExamples.framework */; };
+		A610A77827BCF72C000AEA10 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610A77727BCF72C000AEA10 /* Wireframe.swift */; };
+		A610A77A27BD09B2000AEA10 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610A77927BD09B2000AEA10 /* ActivityIndicator.swift */; };
+		A610A77C27BDEFC9000AEA10 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610A77B27BDEFC9000AEA10 /* Dependencies.swift */; };
+		A67206B427BCE7AA00A40EF4 /* GitHubSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67206B227BCE7AA00A40EF4 /* GitHubSignupViewController.swift */; };
+		A67206B527BCE7AA00A40EF4 /* GitHubSignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A67206B327BCE7AA00A40EF4 /* GitHubSignupViewController.xib */; };
+		A67206B727BCE92D00A40EF4 /* GithubSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67206B627BCE92D00A40EF4 /* GithubSignupViewModel.swift */; };
+		A67206B927BCE98100A40EF4 /* GithubSignupProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67206B827BCE98100A40EF4 /* GithubSignupProtocols.swift */; };
 		A697D77427BA6B770000C494 /* SimplePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A697D77327BA6B770000C494 /* SimplePickerViewController.xib */; };
 		A697D77627BA6BC90000C494 /* CustomeAdapterPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A697D77527BA6BC90000C494 /* CustomeAdapterPickerViewController.xib */; };
 		A697D77A27BB804D0000C494 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A697D77827BB804D0000C494 /* SimpleValidationViewController.swift */; };
@@ -26,12 +33,20 @@
 		A6A997B327B6794300D01616 /* SimplePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A997B127B6794300D01616 /* SimplePickerViewController.swift */; };
 		A6A997B627B9F87900D01616 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A997B527B9F87900D01616 /* ViewController.swift */; };
 		A6A997BA27BA078600D01616 /* CustomeAdapterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A997B927BA078600D01616 /* CustomeAdapterPickerViewController.swift */; };
+		A6AEF03427C60140008DDFE7 /* GitHubDefaultAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AEF03327C60140008DDFE7 /* GitHubDefaultAPI.swift */; };
 		A6E6E3B427BA2920001C72A1 /* PickerViewTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6E3B327BA2920001C72A1 /* PickerViewTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29C9C3CC7A249EE46DCC6B48 /* Pods-RxSwiftExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExamples.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftExamples/Pods-RxSwiftExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		2CC96FA0AE98483A771F6B3D /* Pods-RxSwiftExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExamples.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftExamples/Pods-RxSwiftExamples.release.xcconfig"; sourceTree = "<group>"; };
+		A610A77727BCF72C000AEA10 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		A610A77927BD09B2000AEA10 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		A610A77B27BDEFC9000AEA10 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		A67206B227BCE7AA00A40EF4 /* GitHubSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignupViewController.swift; sourceTree = "<group>"; };
+		A67206B327BCE7AA00A40EF4 /* GitHubSignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GitHubSignupViewController.xib; sourceTree = "<group>"; };
+		A67206B627BCE92D00A40EF4 /* GithubSignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSignupViewModel.swift; sourceTree = "<group>"; };
+		A67206B827BCE98100A40EF4 /* GithubSignupProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSignupProtocols.swift; sourceTree = "<group>"; };
 		A697D77327BA6B770000C494 /* SimplePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimplePickerViewController.xib; sourceTree = "<group>"; };
 		A697D77527BA6BC90000C494 /* CustomeAdapterPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomeAdapterPickerViewController.xib; sourceTree = "<group>"; };
 		A697D77827BB804D0000C494 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +67,7 @@
 		A6A997B127B6794300D01616 /* SimplePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerViewController.swift; sourceTree = "<group>"; };
 		A6A997B527B9F87900D01616 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6A997B927BA078600D01616 /* CustomeAdapterPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeAdapterPickerViewController.swift; sourceTree = "<group>"; };
+		A6AEF03327C60140008DDFE7 /* GitHubDefaultAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubDefaultAPI.swift; sourceTree = "<group>"; };
 		A6E6E3B327BA2920001C72A1 /* PickerViewTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewTabBarController.swift; sourceTree = "<group>"; };
 		E4F80877A9364951749009C4 /* Pods_RxSwiftExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +93,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A67206B027BC9EA600A40EF4 /* GitHubSignup */ = {
+			isa = PBXGroup;
+			children = (
+				A67206B227BCE7AA00A40EF4 /* GitHubSignupViewController.swift */,
+				A67206B327BCE7AA00A40EF4 /* GitHubSignupViewController.xib */,
+				A67206B627BCE92D00A40EF4 /* GithubSignupViewModel.swift */,
+				A67206B827BCE98100A40EF4 /* GithubSignupProtocols.swift */,
+				A6AEF03327C60140008DDFE7 /* GitHubDefaultAPI.swift */,
+			);
+			path = GitHubSignup;
+			sourceTree = "<group>";
+		};
 		A697D77727BB80220000C494 /* SimpleValidation */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +126,7 @@
 		A697D78127BB913D0000C494 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				A67206B027BC9EA600A40EF4 /* GitHubSignup */,
 				A697D77C27BB8D470000C494 /* GeolocationExample */,
 				A697D77727BB80220000C494 /* SimpleValidation */,
 				A6A997AE27B678AA00D01616 /* UIPickerViewExample */,
@@ -110,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				A697D78327BB917E0000C494 /* GeolocationService.swift */,
+				A610A77727BCF72C000AEA10 /* Wireframe.swift */,
+				A610A77927BD09B2000AEA10 /* ActivityIndicator.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -148,6 +179,7 @@
 				A697D78227BB91490000C494 /* Services */,
 				A697D78127BB913D0000C494 /* Examples */,
 				A6A9979527B65F9200D01616 /* AppDelegate.swift */,
+				A610A77B27BDEFC9000AEA10 /* Dependencies.swift */,
 				A6A9979927B65F9200D01616 /* RootViewController.swift */,
 				A6A997B527B9F87900D01616 /* ViewController.swift */,
 				A6A9979E27B65F9300D01616 /* Assets.xcassets */,
@@ -253,6 +285,7 @@
 				A6A9979F27B65F9300D01616 /* Assets.xcassets in Resources */,
 				A697D77627BA6BC90000C494 /* CustomeAdapterPickerViewController.xib in Resources */,
 				A697D78027BB8D5F0000C494 /* GeolocationViewController.xib in Resources */,
+				A67206B527BCE7AA00A40EF4 /* GitHubSignupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67206B427BCE7AA00A40EF4 /* GitHubSignupViewController.swift in Sources */,
 				A697D78427BB917E0000C494 /* GeolocationService.swift in Sources */,
 				A697D78727BB943B0000C494 /* CLLocationManager+Rx.swift in Sources */,
 				A6E6E3B427BA2920001C72A1 /* PickerViewTabBarController.swift in Sources */,
@@ -313,10 +347,16 @@
 				A697D77A27BB804D0000C494 /* SimpleValidationViewController.swift in Sources */,
 				A6A9979A27B65F9200D01616 /* RootViewController.swift in Sources */,
 				A697D78927BB94850000C494 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				A67206B927BCE98100A40EF4 /* GithubSignupProtocols.swift in Sources */,
+				A67206B727BCE92D00A40EF4 /* GithubSignupViewModel.swift in Sources */,
 				A697D77F27BB8D5F0000C494 /* GeolocationViewController.swift in Sources */,
+				A610A77C27BDEFC9000AEA10 /* Dependencies.swift in Sources */,
+				A610A77827BCF72C000AEA10 /* Wireframe.swift in Sources */,
+				A6AEF03427C60140008DDFE7 /* GitHubDefaultAPI.swift in Sources */,
 				A6A997BA27BA078600D01616 /* CustomeAdapterPickerViewController.swift in Sources */,
 				A6A9979627B65F9200D01616 /* AppDelegate.swift in Sources */,
 				A6A997B327B6794300D01616 /* SimplePickerViewController.swift in Sources */,
+				A610A77A27BD09B2000AEA10 /* ActivityIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

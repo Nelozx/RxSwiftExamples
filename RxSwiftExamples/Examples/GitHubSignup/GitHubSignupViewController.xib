@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GitHubSignupViewController" customModule="RxSwiftExamples" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="3NB-sh-buK" id="sN6-oZ-FVx"/>
+                <outlet property="passwordDescLbl" destination="uAF-q4-wPu" id="faO-hW-ygM"/>
+                <outlet property="passwordTF" destination="pLD-XH-kg8" id="ASA-u9-GXh"/>
+                <outlet property="rePasswordTF" destination="wzC-d3-AkA" id="lMQ-ss-c24"/>
+                <outlet property="repeatedPasswordDescLbl" destination="fEj-yK-zlA" id="UBx-qp-Ual"/>
+                <outlet property="signupBtn" destination="KQT-My-O7n" id="JFD-p4-5Fe"/>
+                <outlet property="usernameDesLbl" destination="bQ4-V7-D6D" id="WvC-33-vTZ"/>
+                <outlet property="usernameTF" destination="Btx-VK-9DQ" id="z2f-P8-NeI"/>
+                <outlet property="view" destination="M6i-3E-0HF" id="v4R-xG-wWm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="M6i-3E-0HF">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Btx-VK-9DQ">
+                    <rect key="frame" x="28" y="70" width="358" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pLD-XH-kg8">
+                    <rect key="frame" x="28" y="134" width="358" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username validation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ4-V7-D6D">
+                    <rect key="frame" x="28" y="109" width="358" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.090283701899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Repeat" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzC-d3-AkA">
+                    <rect key="frame" x="28" y="198" width="358" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repeated password validation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEj-yK-zlA">
+                    <rect key="frame" x="28" y="237" width="358" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.090283701899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQT-My-O7n">
+                    <rect key="frame" x="28" y="288" width="358" height="44"/>
+                    <color key="backgroundColor" red="0.48034727570000002" green="0.85350489620000003" blue="0.35366713999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="khg-go-NR0"/>
+                    </constraints>
+                    <state key="normal" title="Sign up">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password validation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAF-q4-wPu">
+                    <rect key="frame" x="28" y="173" width="358" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.090283701899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3NB-sh-buK">
+                    <rect key="frame" x="40" y="300" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gam-2y-pP6">
+                    <rect key="frame" x="28" y="350" width="358" height="143.5"/>
+                    <string key="text">Proving that observable sequences have wanted properties (UIThread, errors handled, sharing of side effects) is done manually. (but has some performance gain that shouldn't be noticeable in practice)
+
+To do this automatically, check out the corresponding `Driver` example.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hP3-Vr-vEa"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="uAF-q4-wPu" secondAttribute="trailing" constant="8" id="3fU-PY-wYr"/>
+                <constraint firstItem="fEj-yK-zlA" firstAttribute="leading" secondItem="M6i-3E-0HF" secondAttribute="leadingMargin" constant="8" id="5m6-Ev-Bsw"/>
+                <constraint firstAttribute="trailingMargin" secondItem="bQ4-V7-D6D" secondAttribute="trailing" priority="800" constant="8" id="71K-Rb-7rr"/>
+                <constraint firstItem="fEj-yK-zlA" firstAttribute="top" secondItem="wzC-d3-AkA" secondAttribute="bottom" constant="5" id="AFl-br-0dt"/>
+                <constraint firstItem="KQT-My-O7n" firstAttribute="top" secondItem="fEj-yK-zlA" secondAttribute="bottom" constant="34" id="CBM-5J-cZW"/>
+                <constraint firstItem="Gam-2y-pP6" firstAttribute="leading" secondItem="KQT-My-O7n" secondAttribute="leading" id="E4s-uM-nwU"/>
+                <constraint firstAttribute="trailingMargin" secondItem="pLD-XH-kg8" secondAttribute="trailing" constant="8" id="LZQ-Bm-Gow"/>
+                <constraint firstItem="uAF-q4-wPu" firstAttribute="top" secondItem="pLD-XH-kg8" secondAttribute="bottom" constant="5" id="OGh-1Z-UlC"/>
+                <constraint firstAttribute="trailingMargin" secondItem="KQT-My-O7n" secondAttribute="trailing" constant="8" id="P5R-SC-p61"/>
+                <constraint firstItem="bQ4-V7-D6D" firstAttribute="top" secondItem="Btx-VK-9DQ" secondAttribute="bottom" constant="5" id="SyY-sv-AZE"/>
+                <constraint firstItem="uAF-q4-wPu" firstAttribute="leading" secondItem="M6i-3E-0HF" secondAttribute="leadingMargin" constant="8" id="VYh-5V-PAk"/>
+                <constraint firstItem="Btx-VK-9DQ" firstAttribute="top" secondItem="hP3-Vr-vEa" secondAttribute="top" constant="26" id="ZUv-te-e41"/>
+                <constraint firstItem="Gam-2y-pP6" firstAttribute="trailing" secondItem="KQT-My-O7n" secondAttribute="trailing" id="ceX-uY-53U"/>
+                <constraint firstItem="KQT-My-O7n" firstAttribute="leading" secondItem="3NB-sh-buK" secondAttribute="trailing" constant="-32" id="chC-Om-cpN"/>
+                <constraint firstAttribute="trailingMargin" secondItem="Btx-VK-9DQ" secondAttribute="trailing" constant="8" id="djz-h2-a5q"/>
+                <constraint firstItem="Btx-VK-9DQ" firstAttribute="leading" secondItem="M6i-3E-0HF" secondAttribute="leadingMargin" constant="8" id="dl8-gn-oWa"/>
+                <constraint firstItem="wzC-d3-AkA" firstAttribute="top" secondItem="uAF-q4-wPu" secondAttribute="bottom" constant="8" id="f9h-fA-3OE"/>
+                <constraint firstItem="bQ4-V7-D6D" firstAttribute="leading" secondItem="M6i-3E-0HF" secondAttribute="leadingMargin" priority="799" constant="8" id="gBL-SZ-jfW"/>
+                <constraint firstAttribute="trailingMargin" secondItem="wzC-d3-AkA" secondAttribute="trailing" constant="8" id="hod-bD-RZr"/>
+                <constraint firstItem="3NB-sh-buK" firstAttribute="centerY" secondItem="KQT-My-O7n" secondAttribute="centerY" id="iGt-g4-CY3"/>
+                <constraint firstItem="pLD-XH-kg8" firstAttribute="leading" secondItem="M6i-3E-0HF" secondAttribute="leadingMargin" constant="8" id="nTO-zw-0qh"/>
+                <constraint firstItem="wzC-d3-AkA" firstAttribute="leading" secondItem="M6i-3E-0HF" secondAttribute="leadingMargin" constant="8" id="qEP-vD-vQh"/>
+                <constraint firstAttribute="trailingMargin" secondItem="fEj-yK-zlA" secondAttribute="trailing" constant="8" id="rfe-LC-g9k"/>
+                <constraint firstItem="Gam-2y-pP6" firstAttribute="top" secondItem="KQT-My-O7n" secondAttribute="bottom" constant="18" id="vla-cm-bcg"/>
+                <constraint firstItem="pLD-XH-kg8" firstAttribute="top" secondItem="bQ4-V7-D6D" secondAttribute="bottom" constant="8" id="yms-hg-FWr"/>
+                <constraint firstItem="KQT-My-O7n" firstAttribute="leading" secondItem="M6i-3E-0HF" secondAttribute="leadingMargin" constant="8" id="yp6-nC-WNS"/>
+            </constraints>
+            <point key="canvasLocation" x="217" y="-30"/>
+        </view>
+    </objects>
+</document>

@@ -27,7 +27,7 @@ class RootViewController: UITableViewController {
             Row(title: "Adding numbers", desc: "Bindings", target: NumbersViewController.self),
             Row(title: "Simple validation", desc: "Bindings", target: SimpleValidationViewController.self),
             Row(title: "Geolocation Subscription", desc: "Observers, service and Drive example", target: GeolocationViewController.self),
-            Row(title: "GitHub Signup - Vanilla Observables", desc: "Simple MVVM example "),
+            Row(title: "GitHub Signup - Vanilla Observables", desc: "Simple MVVM example", target: GitHubSignupViewController.self),
             Row(title: "GitHub Signup - Using Driver", desc: "Simple MVVM example "),
             Row(title: "API wrappers", desc: "API wrappers Example"),
             Row(title: "Calculator", desc: "Stateless calculator example"),
